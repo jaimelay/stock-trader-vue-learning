@@ -26,13 +26,23 @@
                     </v-list-tile>
                 </v-list>
             </v-menu>
+
+            <v-layout align-center>
+                <span class="text-uppercase grey-text text--darken-2">
+                    Balance: {{ funds }}
+                </span>
+            </v-layout>
         </v-toolbar-items>
     </v-toolbar>
 </template>
 
 <script>
 export default {
-
+    computed: {
+        funds() {
+            return this.$store.getters.funds;
+        }
+    }
 }
 </script>
 
