@@ -6,23 +6,23 @@
         </v-toolbar-title>
 
         <v-toolbar-items>
-            <v-btn flat to="/">Início</v-btn>
-            <v-btn flat to="/portfolio">Portfólio</v-btn>
-            <v-btn flat to="/stocks">Ações</v-btn>
+            <v-btn flat to="/">Home</v-btn>
+            <v-btn flat to="/portfolio">Wallet</v-btn>
+            <v-btn flat to="/stocks">Stocks</v-btn>
         </v-toolbar-items>
 
         <v-spacer></v-spacer>
 
         <v-toolbar-items>
-            <v-btn flat>Finalizar Dia</v-btn>
+            <v-btn flat>Finish The Day</v-btn>
             <v-menu offset-y>
-                <v-btn flat slot="activator">Salvar & Carregar</v-btn>
+                <v-btn flat slot="activator">Save & Load</v-btn>
                 <v-list>
                     <v-list-tile>
-                        <v-list-tile-title>Salvar Dados</v-list-tile-title>
+                        <v-list-tile-title>Save Data</v-list-tile-title>
                     </v-list-tile>
                     <v-list-tile>
-                        <v-list-tile-title>Carregar Dados</v-list-tile-title>
+                        <v-list-tile-title>Load Data</v-list-tile-title>
                     </v-list-tile>
                 </v-list>
             </v-menu>
@@ -32,7 +32,7 @@
 
 <script>
 export default {
-    
+
 }
 </script>
 

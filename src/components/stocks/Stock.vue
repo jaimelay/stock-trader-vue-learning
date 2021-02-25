@@ -2,7 +2,7 @@
     <v-flex class="pr-3 pb-3" xs12 md6 lg4>
         <v-card class="green darken-3 white--text">
             <v-card-title class="headline">
-                <strong>{{ stock.name }} <small>(Preço: {{ stock.price }})</small></strong>
+                <strong>{{ stock.name }} <small>(Price: {{ stock.price }})</small></strong>
             </v-card-title>
         </v-card>
 
@@ -18,7 +18,7 @@
                     :disabled="quantity <= 0 || !Number.isInteger(quantity)"
                     @click="buyStock"
                 >
-                    Comprar
+                    Buy
                 </v-btn>
             </v-container>
         </v-card>
@@ -41,7 +41,7 @@ export default {
                 quantity: this.quantity
             }
 
-            console.log(order);
+            this.$store.dispatch('buyStock', order);
             this.quantity = 0;
         }
     }
