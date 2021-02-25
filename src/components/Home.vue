@@ -14,7 +14,7 @@
                 info
             </v-icon>
             <span class="headline white--text font-weight-light">
-                Click on 'Finish The Day' to start new day of business!
+                Click on 'End The Day' to start new day of business!
             </span>
         </v-sheet>
         <v-divider class="my-4" />
